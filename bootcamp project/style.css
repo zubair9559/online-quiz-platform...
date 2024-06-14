@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, rgb(255, 0, 195), #4a90e2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(5, 2, 17, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(4, 0, 15, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+#progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+#progress {
+    height: 10px;
+    background-color: #4caf50;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+
+#quiz-container {
+    margin-top: 20px;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 18px;
+    margin-bottom: 20px;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.option:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.option:active {
+    background-color: #004494;
+    transform: translateY(0);
+}
+
+#next-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#next-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+#next-btn:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+

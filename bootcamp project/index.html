@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Quiz Platform</h1>
+        <div id="quiz-container">
+            <div id="question"></div>
+            <div class="options">
+                <button class="option" onclick="selectOption(0)">Option 1</button>
+                <button class="option" onclick="selectOption(1)">Option 2</button>
+                <button class="option" onclick="selectOption(2)">Option 3</button>
+                <button class="option" onclick="selectOption(3)">Option 4</button>
+            </div>
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
+            <button id="restart-btn" onclick="restartQuiz()">Restart Quiz</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
